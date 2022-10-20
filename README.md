@@ -12,7 +12,7 @@ Follow this [video](https://www.youtube.com/watch?v=JT8EXoobjSc&ab_channel=Progr
 
 # simple-windows-driver
 
-Firstly run cmd.exe as administrator to turn test signature mode after reloading
+Firstly run cmd.exe as administrator to turn on test signature mode after reloading
 
 ```console
 bcdedit /set testsigning on
@@ -20,15 +20,15 @@ bcdedit /set testsigning on
 
 Run cmd.exe as administrator after compiling project
 
-This comman create folder in regestry editor HKLM\System\CurrentControlSet\Services\sample
+This command will create folder in registry editor HKLM\System\CurrentControlSet\Services\sample
 
 ```console
-sc create sample type= kernel binPath= [<u> ** your path to repo ** </u>]\simple-windows-driver\x64\debug\sample.sys
+sc create sample type=kernel binPath=[your path to repo]\simple-windows-driver\x64\debug\sample.sys
 ```
 
 ## Run driver
 
-cmd.exe must be runned as andministrator
+cmd.exe must be run as andministrator
 
 ```console
 sc start sample
@@ -36,7 +36,7 @@ sc start sample
 
 ## Stop driver
 
-cmd.exe must be runned as andministrator
+cmd.exe must be run as andministrator
 
 ```console
 sc stop sample
