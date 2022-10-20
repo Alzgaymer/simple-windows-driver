@@ -26,7 +26,7 @@ This comman create folder in regestry editor HKLM\System\CurrentControlSet\Servi
 sc create sample type= kernel binPath= [<u> ** your path to repo ** </u>]\simple-windows-driver\x64\debug\sample.sys
 ```
 
-##Run driver
+## Run driver
 
 cmd.exe must be runned as andministrator
 
@@ -34,7 +34,7 @@ cmd.exe must be runned as andministrator
 sc start sample
 ```
 
-##Stop driver
+## Stop driver
 
 cmd.exe must be runned as andministrator
 
